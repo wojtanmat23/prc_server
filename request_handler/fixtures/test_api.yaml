@@ -1,0 +1,33 @@
+- model: auth.user
+  pk: 1
+  fields:
+    username: test
+    password: pbkdf2_sha256$30000$6AJvq5bDWcr6$k0KuDUnh1pPILon8PHKPd9Z0ss3KPdVhaQvOvfq+MMs=
+    email: test@example.com
+    is_staff: True
+
+- model: request_handler.allowedrequest
+  pk: 1
+  fields:
+    volume_louder: True
+    volume_lower: True
+    volume_mute: True
+
+    # power settings
+    system_monitor: True
+    system_reboot: True
+    system_shutdown: True
+    system_logout: True
+    system_recycle: True
+    system_screenshot: True
+
+    # mouse settings
+    mouse_left: True
+    mouse_right: True
+    mouse_up: True
+    mouse_down: True
+    mouse_leftclick: True
+    mouse_rightclick: True
+
+    # other
+    python_external: True
